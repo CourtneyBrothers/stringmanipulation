@@ -23,15 +23,19 @@ function captureText(){
     
     function alphabits() {
         let az = textValue.split("").sort().join("");
+        let azDiv = document.createElement("div");
+        output.appendChild(azDiv);
         let azText = document.createTextNode(az);
-        output.appendChild(azText);
+        azDiv.appendChild(azText);
     
         };
     
     function palindrome() {
         palin = textValue.split("").reverse().join("");
         if (palin === textValue){
-            console.log("it's a palindrom!");
+            palindromeDiv = document.createElement("div");
+            output.appendChild(palindromeDiv);
+            palindromeDiv.innerHTML = "Your string is a palindrome";
         };
         
         } ;  
