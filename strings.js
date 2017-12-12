@@ -13,12 +13,13 @@ function captureText(){
     const re = new RegExp(/\d/g);
     if (re.test(text.value)){
         console.log("error");
+        output.innerHTML = "please enter only letters";
     }
     else {
         console.log(re.test(text.value));
         console.log(text.value);
         console.log("reg worked!");
-    }
+    
     
                 let textValue = text.value;
                 let splitText = textValue.split("");
@@ -66,4 +67,4 @@ function captureText(){
              
         
    
-        
+            }
