@@ -34,7 +34,9 @@ function captureText(){
                 
                     let reversed = textValue.split("").reverse().join("");
                     let reversedText = document.createTextNode(reversed);
-                    output.appendChild(reversedText);
+                    let reversedDiv = document.createElement("div");
+                    output.appendChild(reversedDiv);
+                    reversedDiv.appendChild(reversedText);
                 
                     };
                 
